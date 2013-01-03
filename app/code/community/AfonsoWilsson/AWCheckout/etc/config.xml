@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <AfonsoWilsson_AWCheckout>
+            <version>0.0.1</version>
+        </AfonsoWilsson_AWCheckout>
+    </modules>
+    <!--
+    <global>
+        <blocks>
+            <skipstep1>
+                <class>AfonsoWilsson_AWCheckout_Block</class>
+            </skipstep1>
+            <checkout>
+                <rewrite>
+                    <onepage>AfonsoWilsson_AWCheckout_Block_Checkout_Onepage</onepage>
+                </rewrite>
+            </checkout>
+        </blocks>
+    </global>
+    -->
+    <frontend>
+        <layout>
+            <updates>
+                <onepagecheckout>
+                    <file>awcheckout.xml</file>
+                </onepagecheckout>
+            </updates>
+        </layout>
+    </frontend>
+
+</config>

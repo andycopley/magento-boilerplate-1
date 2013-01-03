@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<Alanstormdotcom_Configviewer>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Alanstormdotcom_Configviewer>
+	</modules>
+</config>
