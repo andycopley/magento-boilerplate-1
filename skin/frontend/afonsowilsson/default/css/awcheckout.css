@@ -1,0 +1,387 @@
+/*** Checkout ***/
+
+/* Meta/generic */
+
+.checkout-onepage-index .checkout-wrapper {
+    background: #dadbdc;
+	width: 900px;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+
+.checkout-onepage-index h1 {
+	font-size: 36px;
+	text-align: center;
+}
+
+.checkout-onepage-index fieldset {
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+
+/* Cart */
+
+.checkout-onepage-index .cart {
+	margin: 0;
+	padding: 0 70px 40px 70px;
+}
+
+.checkout-onepage-index #shopping-cart-table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+.checkout-onepage-index #shopping-cart-table .col-one,
+.checkout-onepage-index #shopping-cart-table .col-two {
+	width: 33%;
+}
+
+.checkout-onepage-index #shopping-cart-table .col-three,
+.checkout-onepage-index #shopping-cart-table .col-four {
+	width: 16.5%;
+}
+
+.checkout-onepage-index .cart .item-image a {
+	display: block;
+	position: relative;
+}
+
+.checkout-onepage-index .cart .item-image img {
+	position: relative;
+	top: -50px;
+	left: -40px;
+}
+
+.checkout-onepage-index #shopping-cart-table .item-name,
+.checkout-onepage-index #shopping-cart-table .item-qty,
+.checkout-onepage-index #shopping-cart-table .item-price {
+	text-align: center;
+}
+
+.checkout-onepage-index #shopping-cart-table .item-name h3 {
+	font-family: 'futura-pt', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+.checkout-onepage-index #shopping-cart-table .item-qty {
+	font-family: 'futura-pt', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+.checkout-onepage-index #shopping-cart-table .item-qty input {
+	background: transparent;
+	font-family: 'futura-pt', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	line-height: 100%;
+	text-transform: uppercase;
+	border: none;
+}
+
+.checkout-onepage-index #shopping-cart-table .item-qty .qty-subtract,
+.checkout-onepage-index #shopping-cart-table .item-qty .qty-add {
+	cursor: pointer;
+}
+
+.checkout-onepage-index #shopping-cart-table .item-price {
+	background: transparent;
+	font-family: 'futura-pt', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	line-height: 100%;
+	text-transform: uppercase;
+	border: none;
+}
+
+.checkout-onepage-index #shopping-cart-table tfoot td {
+	text-align: center;
+}
+
+.checkout-onepage-index #shopping-cart-table tfoot .btn-update {
+	background: #fff;
+	font-family: 'Arial', sans-serif;
+	font-size: 11px;
+	line-height: 100%;
+	padding: 10px;
+	border: 0;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.checkout-onepage-index .discount {
+	display: inline-block;
+	overflow: auto;
+}
+
+.checkout-onepage-index #discount-coupon-form {
+	display: inline-block;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.checkout-onepage-index .discount .input-box {
+	display: inline-block;
+	float: left;
+}
+
+.checkout-onepage-index .discount .input-box input {
+	background: #fff;
+	font-family: 'Arial', sans-serif;
+	font-size: 11px;
+	line-height: 100%;
+	width: 90px;
+	margin: 0 10px 0 0;
+	padding: 10px;
+	border: 0;
+	border-radius: 2px;
+}
+
+.checkout-onepage-index .discount .buttons-set {
+	display: inline-block;
+	float: left;
+}
+
+.checkout-onepage-index .discount .buttons-set button {
+	position: relative;
+	top: 8px;
+	background: 0;
+	margin: 0 5px;
+	padding: 0;
+	border: 0;
+	float: left;
+	cursor: pointer;
+}
+
+.checkout-onepage-index .totals .currency-switcher {
+	text-align: left;
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px dotted #fff;
+	overflow: auto;
+}
+
+.checkout-onepage-index .totals .currency-switcher label {
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.checkout-onepage-index .totals .currency-switcher select {
+	position: relative;
+	top: -1px;
+	float: right;
+}
+
+.checkout-onepage-index .totals #shopping-cart-totals-table {
+	font-family: 'futura-pt', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 150%;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.checkout-onepage-index .totals #shopping-cart-totals-table .left-align {
+	font-weight: 300;
+	text-align: left;
+}
+
+.checkout-onepage-index .totals #shopping-cart-totals-table .left-align strong {
+	font-weight: 300;
+}
+
+.checkout-onepage-index .totals #shopping-cart-totals-table .right-align,
+.checkout-onepage-index .totals #shopping-cart-totals-table .last {
+	font-weight: bold;
+	font-weight: 700;
+	text-align: right;
+}
+
+.checkout-onepage-index .totals #shopping-cart-totals-table th {
+	font-weight: 300;
+	text-align: left;
+}
+
+/* Checkout steps */
+
+#checkoutSteps {
+    border-top: 1px solid #fff;
+    margin: 0 0 30px 0;
+    -webkit-transition: height 2s;
+    padding: 24px 70px;
+    position: relative;
+}
+
+.section {
+    display: none;
+    min-height: 450px;
+}
+
+.section.active {
+    display: block;
+}
+
+.section .step-title h2 {
+    margin: 5px 0;
+}
+
+.section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.section .form-list li li {
+	display: inline-block;
+	width: auto;
+}
+
+.section .form-list {
+	overflow: auto;
+}
+
+.section .form-list .fields,
+.section .form-list .wide {
+	width: 210px;
+	float: left;
+}
+
+.section .form-list .double,
+.section .form-list .customer-name {
+	width: auto;
+	float: left;
+}
+
+.section .form-list .field,
+.section .form-list .input-box {
+	width: 210px;
+	float: left;
+}
+
+.section .fields input,
+.section .wide input {
+	width: 200px;
+}
+
+.section .fields select,
+.section .wide select {
+	width: 207px;
+}
+
+.section .button:before {
+    content: "» ";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section .back-link a:before {
+    content: "« ";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section .button,
+.section .back-link a {
+    position: absolute; 
+    bottom: 50px;
+    right: 70px;
+    background: #47a85c;
+    color: #fff;
+    font: 11px Arial, sans-serif;
+    line-height: 38px;
+    text-transform: uppercase;
+    padding: 0 35px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section .back-link a {
+    background: #a5a5a5;
+    right: auto;
+    left: 70px;
+}
+
+.section .back-link a small {
+    display: none;
+}
+
+/*** Checkout hacks/workarounds ***/
+
+/* Hide for now, make prettier later */
+.please-wait {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.6);
+    color: transparent;
+    font: 1px Arial, sans-serif;
+}
+
+.please-wait img {
+    display: block;
+    margin: 190px auto 0 auto;
+}
+
+/* Workaround, opcheckout.js adds a .5 opacity to this manually and that ruins the throbber */
+.section .buttons-set {
+    opacity: 1 !important;
+}
+
+.checkout-wrapper ul {
+	overflow: hidden;
+}
+
+.checkout-wrapper .field {
+	float: left;
+}
+
+.checkout-wrapper select {
+	width: 100%;
+}
+
+.checkout-wrapper .field input {
+	width: 200px;
+}
+
+.checkout-wrapper .field, .fields, .wide {
+	margin-right: 40px;
+}
+
+.checkout-wrapper label {
+	text-transform: uppercase;
+	font: 10px Arial, sans-serif;
+}
+
+.checkout-wrapper label em {
+	display: none;
+}
+
+.checkout-wrapper input,
+.checkout-wrapper select {
+	font: 12px Arial, sans-serif;
+	background: #fff;
+	border-radius: 3px;
+	border: 0;
+	padding: 7px;
+}
+
+#billing-new-address-form {
+	margin-bottom: 10px;
+}
