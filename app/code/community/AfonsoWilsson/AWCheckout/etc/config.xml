@@ -6,20 +6,6 @@
             <version>0.0.1</version>
         </AfonsoWilsson_AWCheckout>
     </modules>
-    <!--
-    <global>
-        <blocks>
-            <skipstep1>
-                <class>AfonsoWilsson_AWCheckout_Block</class>
-            </skipstep1>
-            <checkout>
-                <rewrite>
-                    <onepage>AfonsoWilsson_AWCheckout_Block_Checkout_Onepage</onepage>
-                </rewrite>
-            </checkout>
-        </blocks>
-    </global>
-    -->
     <frontend>
         <layout>
             <updates>
@@ -28,6 +14,14 @@
                 </onepagecheckout>
             </updates>
         </layout>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <AfonsoWilsson_AWCheckout before="Mage_Checkout">AfonsoWilsson_AWCheckout_Checkout</AfonsoWilsson_AWCheckout>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
     </frontend>
-
 </config>

@@ -47,4 +47,5 @@
 			<action method="removeItem"><type>skin_css</type><name>css/print.css</name></action>
 		</reference>
 	</default>
+
 </layout>

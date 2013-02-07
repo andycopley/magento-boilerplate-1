@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout version="0.1.0">
-
     <checkout_onepage_index translate="label">
         <label>One Page Checkout</label>
-        <reference name="content">
-            <block type="checkout/cart" name="checkout.cart" before="checkout.onepage">
-                <action method="setCartTemplate"><value>checkout/cart.phtml</value></action>
-                <action method="setEmptyTemplate"><value>checkout/cart/noItems.phtml</value></action>
-                <action method="chooseTemplate"/>
-                <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/item/default.phtml</template></action>
-                <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/item/default.phtml</template></action>
-                <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/item/default.phtml</template></action>
-            </block>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+
+            <block type="core/template" name="checkout.onepage.before" as="onepage-before" before="checkout.onepage" template="checkout/onepage/before.phtml"/>
+
+            <reference name="content">
+                <block type="checkout/cart" name="checkout.cart" before="checkout.onepage">
+                    <action method="setCartTemplate"><value>checkout/cart.phtml</value></action>
+                    <action method="setEmptyTemplate"><value>checkout/cart/noItems.phtml</value></action>
+                    <action method="chooseTemplate"/>
+                    <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/item/default.phtml</template></action>
+                    <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/item/default.phtml</template></action>
+                    <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/item/default.phtml</template></action>
+
+                    <block type="checkout/cart_totals" name="checkout.cart.totals" as="totals" template="checkout/cart/totals.phtml"/>
+                </block>
+
+                    <block type="checkout/cart_coupon" name="checkout.cart.coupon" before="checkout.onepage" as="coupon" template="checkout/cart/coupon.phtml"/>
+            </reference>
+
+            <block type="core/template" name="checkout.onepage.after" as="onepage-after" after="checkout.onepage" template="checkout/onepage/after.phtml"/>
         </reference>
     </checkout_onepage_index>
+
+    <checkout_onepage_review translate="label">
+            <remove name="checkout.onepage.review.info.totals"/>
+            <remove name="checkout.onepage.review.info.items.before"/>
+            <remove name="checkout.onepage.review.info.items.after"/>
+    </checkout_onepage_review>
 
     <default translate="label" module="page">
         <label>All Pages</label>
         <reference name="root">
             <reference name="head">
-				<action method="addItem"><type>skin_js</type><name>js/awcheckout.js</name></action>
+                <action method="addItem"><type>skin_js</type><name>js/awcheckout.js</name></action>
             </reference>
         </reference>
     </default>
-
 </layout>
