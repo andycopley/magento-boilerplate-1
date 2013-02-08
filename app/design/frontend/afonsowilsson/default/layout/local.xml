@@ -38,6 +38,7 @@
 			<action method="addItem"><type>skin_js</type><name>js/ie6.js</name><params/><if>lt IE 7</if></action>
 
 			<action method="addItem"><type>skin_js</type><name>js/script.js</name></action>
+			<action method="addItem"><type>skin_css</type><name>css/bootstrap.css</name></action>
 			<action method="addItem"><type>skin_css</type><name>css/style.css</name></action>
 			<action method="addItem"><type>skin_css</type><name>css/awcheckout.css</name></action>
 
